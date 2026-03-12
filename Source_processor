@@ -1,0 +1,1726 @@
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+Command finished with exit code 0:
+/Users/taharizvi/aiq/aiq tf terraform/prod/source_processor/instances/54 init --stackname 2026-01-19 --account-name prod
+Run command?
+/Users/taharizvi/aiq/aiq tf terraform/prod/source_processor/instances/54 destroy --stackname 2026-01-19  --account-name prod
+y/n [y]: y
+module.bar_page_prod.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=source-processor-54-bar_p_page-2026-01-19-prod_iam_role-20260121202038924000000005]
+module.wsj_abandon_cart.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_profile]
+module.wsj_emerg_dis.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_profile]
+module.wsj_page_prod.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=source-processor-54-wsj_p_page-2026-01-19-prod_iam_profile]
+module.wsj_abandon_cart_qa.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_profile]
+module.wsj_abandon_cart.aws_route53_record.source_processor_cname["sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=ZDZPE368BU2N5_sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co._CNAME]
+module.wsj_page_prod.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=source-processor-54-wsj_p_page-2026-01-19-prod_iam_role]
+module.wsj_emerg_dis.aws_route53_record.source_processor_cname["sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=ZDZPE368BU2N5_sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co._CNAME]
+module.wsj_abandon_cart_qa.aws_instance.source_processor["sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=i-087d94e64fd015c20]
+module.wsj_abandon_cart.aws_instance.source_processor["sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=i-0d76c6a8f9c8c6362]
+module.wsj_abandon_cart.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-2026-01-19-source-processor-54-dj_abdn_cart-plan.json]
+module.bar_page_prod.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=source-processor-54-bar_p_page-2026-01-19-prod_iam_role]
+module.wsj_abandon_cart.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role]
+module.wsj_abandon_cart_qa.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-2026-01-19-source-processor-54-dj_abdn_cart_qa-plan.json]
+module.wsj_emerg_dis.aws_instance.source_processor["sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=i-0d245119338512cb4]
+module.bar_page_prod.aws_route53_record.source_processor_cname["sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=ZDZPE368BU2N5_sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co._CNAME]
+module.wsj_page_prod.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=source-processor-54-wsj_p_page-2026-01-19-prod_iam_role-20260121202038827600000001]
+module.wsj_page_prod.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-2026-01-19-source-processor-54-wsj_p_page-plan.json]
+module.wsj_emerg_dis.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role]
+module.wsj_abandon_cart.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role-20260121202039048100000006]
+module.mkw_page_prod.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=source-processor-54-mkw_p_page-2026-01-19-prod_iam_role-20260121202038838600000002]
+module.mkw_page_prod.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=source-processor-54-mkw_p_page-2026-01-19-prod_iam_role]
+module.wsj_abandon_cart_qa.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role]
+module.wsj_emerg_dis.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role-20260121202038840900000003]
+module.wsj_page_prod.aws_instance.source_processor["sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=i-0a123e1f7aad19545]
+module.bar_page_prod.aws_instance.source_processor["sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=i-0bd91f61a382b22a5]
+module.bar_page_prod.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=source-processor-54-bar_p_page-2026-01-19-prod_iam_profile]
+module.mkw_page_prod.aws_instance.source_processor["sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=i-0a235774a44d851a2]
+module.mkw_page_prod.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-2026-01-19-source-processor-54-mkw_p_page-plan.json]
+module.wsj_page_prod.aws_route53_record.source_processor_cname["sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=ZDZPE368BU2N5_sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co._CNAME]
+module.wsj_abandon_cart_qa.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role-20260121202038849800000004]
+module.wsj_abandon_cart_qa.aws_route53_record.source_processor_cname["sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=ZDZPE368BU2N5_sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co._CNAME]
+module.mkw_page_prod.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=source-processor-54-mkw_p_page-2026-01-19-prod_iam_profile]
+module.mkw_page_prod.aws_route53_record.source_processor_cname["sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co"]: Refreshing state... [id=ZDZPE368BU2N5_sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co._CNAME]
+module.wsj_emerg_dis.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-2026-01-19-source-processor-54-wsj_emerg_dis-plan.json]
+module.bar_page_prod.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-2026-01-19-source-processor-54-bar_p_page-plan.json]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # module.bar_page_prod.aws_instance.source_processor["sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_instance" "source_processor" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-0bd91f61a382b22a5" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 4 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "source-processor-54-bar_p_page-2026-01-19-prod_iam_profile" -> null
+      - id                                   = "i-0bd91f61a382b22a5" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "c5.2xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-029c6c8db47a052cb" -> null
+      - private_dns                          = "ip-10-30-50-252.ec2.internal" -> null
+      - private_ip                           = "10.30.50.252" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-bar_p_page"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "bar_p_page"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-bar_p_page"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "bar_p_page"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "source-processor-54-bar_p_page"
+              - "stack_name"  = "2026-01-19"
+              - "stack_type"  = "source-processor"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-09cad45d5267e4753" -> null
+          - volume_size           = 100 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.bar_page_prod.aws_route53_record.source_processor_cname["sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_route53_record" "source_processor_cname" {
+      - fqdn    = "sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co._CNAME" -> null
+      - name    = "sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-50-252.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.mkw_page_prod.aws_instance.source_processor["sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_instance" "source_processor" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-0a235774a44d851a2" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 4 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_profile" -> null
+      - id                                   = "i-0a235774a44d851a2" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "c5.2xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-057434cd1b6cd87eb" -> null
+      - private_dns                          = "ip-10-30-50-250.ec2.internal" -> null
+      - private_ip                           = "10.30.50.250" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-mkw_p_page"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "mkw_p_page"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-mkw_p_page"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "mkw_p_page"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "source-processor-54-mkw_p_page"
+              - "stack_name"  = "2026-01-19"
+              - "stack_type"  = "source-processor"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-0dc9e4ec2ed4fc6f2" -> null
+          - volume_size           = 100 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.mkw_page_prod.aws_route53_record.source_processor_cname["sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_route53_record" "source_processor_cname" {
+      - fqdn    = "sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co._CNAME" -> null
+      - name    = "sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-50-250.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.wsj_abandon_cart.aws_instance.source_processor["sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_instance" "source_processor" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-0d76c6a8f9c8c6362" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 4 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_profile" -> null
+      - id                                   = "i-0d76c6a8f9c8c6362" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "c5.2xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-03b629a25c4cbc87e" -> null
+      - private_dns                          = "ip-10-30-51-25.ec2.internal" -> null
+      - private_ip                           = "10.30.51.25" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-dj_abdn_cart"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "dj_abdn_cart"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-dj_abdn_cart"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "dj_abdn_cart"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "source-processor-54-dj_abdn_cart"
+              - "stack_name"  = "2026-01-19"
+              - "stack_type"  = "source-processor"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-05602cc02a98c635d" -> null
+          - volume_size           = 100 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.wsj_abandon_cart.aws_route53_record.source_processor_cname["sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_route53_record" "source_processor_cname" {
+      - fqdn    = "sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co._CNAME" -> null
+      - name    = "sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-51-25.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.wsj_abandon_cart_qa.aws_instance.source_processor["sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_instance" "source_processor" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-087d94e64fd015c20" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 4 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_profile" -> null
+      - id                                   = "i-087d94e64fd015c20" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "c5.2xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-032f53799129dfc2b" -> null
+      - private_dns                          = "ip-10-30-54-127.ec2.internal" -> null
+      - private_ip                           = "10.30.54.127" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-dj_abdn_cart_qa"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "dj_abdn_cart_qa"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-dj_abdn_cart_qa"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "dj_abdn_cart_qa"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "source-processor-54-dj_abdn_cart_qa"
+              - "stack_name"  = "2026-01-19"
+              - "stack_type"  = "source-processor"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-0a9b99ba618aa828a" -> null
+          - volume_size           = 100 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.wsj_abandon_cart_qa.aws_route53_record.source_processor_cname["sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_route53_record" "source_processor_cname" {
+      - fqdn    = "sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co._CNAME" -> null
+      - name    = "sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-54-127.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.wsj_emerg_dis.aws_instance.source_processor["sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_instance" "source_processor" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-0d245119338512cb4" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 4 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_profile" -> null
+      - id                                   = "i-0d245119338512cb4" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "c5.2xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-0c89c6f0356b1289c" -> null
+      - private_dns                          = "ip-10-30-48-182.ec2.internal" -> null
+      - private_ip                           = "10.30.48.182" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-wsj_emerg_dis"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "wsj_emerg_dis"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-wsj_emerg_dis"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "wsj_emerg_dis"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "source-processor-54-wsj_emerg_dis"
+              - "stack_name"  = "2026-01-19"
+              - "stack_type"  = "source-processor"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-08f51ac1cffef46a4" -> null
+          - volume_size           = 100 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.wsj_emerg_dis.aws_route53_record.source_processor_cname["sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_route53_record" "source_processor_cname" {
+      - fqdn    = "sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co._CNAME" -> null
+      - name    = "sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-48-182.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.wsj_page_prod.aws_instance.source_processor["sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_instance" "source_processor" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-0a123e1f7aad19545" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 4 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_profile" -> null
+      - id                                   = "i-0a123e1f7aad19545" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "c5.2xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-0444cacc39160cbe7" -> null
+      - private_dns                          = "ip-10-30-50-141.ec2.internal" -> null
+      - private_ip                           = "10.30.50.141" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-wsj_p_page"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "wsj_p_page"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.201.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "source-processor-54-wsj_p_page"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "2026-01-19"
+          - "stack_type"            = "source-processor"
+          - "stream_name"           = "wsj_p_page"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "source-processor-54-wsj_p_page"
+              - "stack_name"  = "2026-01-19"
+              - "stack_type"  = "source-processor"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-028d02cdea4fd3bed" -> null
+          - volume_size           = 100 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.wsj_page_prod.aws_route53_record.source_processor_cname["sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co"] will be destroyed
+  - resource "aws_route53_record" "source_processor_cname" {
+      - fqdn    = "sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co._CNAME" -> null
+      - name    = "sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-50-141.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.bar_page_prod.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/source-processor-54-bar_p_page-2026-01-19-prod_iam_profile" -> null
+      - create_date = "2026-01-21T20:20:38Z" -> null
+      - id          = "source-processor-54-bar_p_page-2026-01-19-prod_iam_profile" -> null
+      - name        = "source-processor-54-bar_p_page-2026-01-19-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "source-processor-54-bar_p_page-2026-01-19-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7PABZQOP5WR" -> null
+    }
+
+  # module.bar_page_prod.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/source-processor-54-bar_p_page-2026-01-19-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-01-21T20:20:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "source-processor-54-bar_p_page-2026-01-19-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "source-processor-54-bar_p_page-2026-01-19-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PLVPW5UVE4" -> null
+
+      - inline_policy {}
+    }
+
+  # module.bar_page_prod.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "source-processor-54-bar_p_page-2026-01-19-prod_iam_role-20260121202038924000000005" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "source-processor-54-bar_p_page-2026-01-19-prod_iam_role" -> null
+    }
+
+  # module.bar_page_prod.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.347.4
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.347.3
+                luigi-worker: 0.347.3
+                luigi-worker-cadmium: 0.347.3
+                luigi-worker-gallium: 0.347.3
+                luigi-worker-iridium: 0.347.3
+                luigi-worker-lithium: 0.347.3
+                luigi-worker-osmium: 0.347.3
+                luigi-worker-thorium: 0.347.3
+                luigi-worker-tungsten: 0.347.3
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1096.0/activation-api_2.12-0.1096.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1052.0/activation-delivery-api_2.12-0.1052.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1175.0/amo-api_2.12-0.1175.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.961.0/cdp-query-api_2.12-0.961.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.992.0/data-pipeline_2.12-0.992.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.348.0/events_api_2.12-0.348.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1049.0/execution-api_2.12-0.1049.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1101.0/exporting_2.12-0.1101.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1188.0/fe-server_2.12-0.1188.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1139.0/field-tools_2.12-0.1139.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.625.0/icc-calc-lambda_2.12-0.625.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1005.0/ingest-api_2.12-0.1005.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.874.0/ingest-tool_2.12-0.874.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1058.0/offline-task-scheduler_2.12-0.1058.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.915.0/pm-tool_2.12-0.915.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.874.0/profile-processor_2.12-0.874.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.900.0/query-tool_2.12-0.900.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.958.0/sentinel-service_2.12-0.958.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1073.0/source-processor_2.12-0.1073.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.968.0/spark-api_2.12-0.968.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.999.0/spark-drivers-3-3_2.12-0.999.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.949.0/spark-tool_2.12-0.949.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.335.0/streaming-ingest-auth-lambda_2.12-1.335.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.375.0/streaming-ingest-lambda_2.12-1.375.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1088.0/trigger-execution_2.12-0.1088.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.952.0/trigger-execution-tools_2.12-0.952.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.73.0/worker-watcher_2.12-1.73.0-assembly.jar
+              inventory:
+                hosts:
+                  sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co:
+                    host_type: source-processor
+                    ec2_tag_Name: sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co
+                    ec2_tag_stack_name: 2026-01-19
+                groups:
+                  tag_aiq_module_source-processor:
+                  - sp.54.bar-p-page.0.2026-01-19.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: 2026-01-19
+                stack_type: source-processor
+                branch: master
+                git_commit: 623ad826f51cecea66bf308195a80cd409490993
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "4829818d854ae08aebce84ff736dfc05" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-2026-01-19-source-processor-54-bar_p_page-plan.json" -> null
+      - key                    = "aiq-prod-2026-01-19-source-processor-54-bar_p_page-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+  # module.mkw_page_prod.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/source-processor-54-mkw_p_page-2026-01-19-prod_iam_profile" -> null
+      - create_date = "2026-01-21T20:20:38Z" -> null
+      - id          = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_profile" -> null
+      - name        = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7PDSULWNMTO" -> null
+    }
+
+  # module.mkw_page_prod.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/source-processor-54-mkw_p_page-2026-01-19-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-01-21T20:20:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PJB2PFS4J3" -> null
+
+      - inline_policy {}
+    }
+
+  # module.mkw_page_prod.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_role-20260121202038838600000002" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "source-processor-54-mkw_p_page-2026-01-19-prod_iam_role" -> null
+    }
+
+  # module.mkw_page_prod.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.347.4
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.347.3
+                luigi-worker: 0.347.3
+                luigi-worker-cadmium: 0.347.3
+                luigi-worker-gallium: 0.347.3
+                luigi-worker-iridium: 0.347.3
+                luigi-worker-lithium: 0.347.3
+                luigi-worker-osmium: 0.347.3
+                luigi-worker-thorium: 0.347.3
+                luigi-worker-tungsten: 0.347.3
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1096.0/activation-api_2.12-0.1096.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1052.0/activation-delivery-api_2.12-0.1052.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1175.0/amo-api_2.12-0.1175.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.961.0/cdp-query-api_2.12-0.961.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.992.0/data-pipeline_2.12-0.992.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.348.0/events_api_2.12-0.348.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1049.0/execution-api_2.12-0.1049.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1101.0/exporting_2.12-0.1101.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1188.0/fe-server_2.12-0.1188.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1139.0/field-tools_2.12-0.1139.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.625.0/icc-calc-lambda_2.12-0.625.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1005.0/ingest-api_2.12-0.1005.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.874.0/ingest-tool_2.12-0.874.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1058.0/offline-task-scheduler_2.12-0.1058.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.915.0/pm-tool_2.12-0.915.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.874.0/profile-processor_2.12-0.874.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.900.0/query-tool_2.12-0.900.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.958.0/sentinel-service_2.12-0.958.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1073.0/source-processor_2.12-0.1073.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.968.0/spark-api_2.12-0.968.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.999.0/spark-drivers-3-3_2.12-0.999.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.949.0/spark-tool_2.12-0.949.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.335.0/streaming-ingest-auth-lambda_2.12-1.335.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.375.0/streaming-ingest-lambda_2.12-1.375.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1088.0/trigger-execution_2.12-0.1088.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.952.0/trigger-execution-tools_2.12-0.952.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.73.0/worker-watcher_2.12-1.73.0-assembly.jar
+              inventory:
+                hosts:
+                  sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co:
+                    host_type: source-processor
+                    ec2_tag_Name: sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co
+                    ec2_tag_stack_name: 2026-01-19
+                groups:
+                  tag_aiq_module_source-processor:
+                  - sp.54.mkw-p-page.0.2026-01-19.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: 2026-01-19
+                stack_type: source-processor
+                branch: master
+                git_commit: 623ad826f51cecea66bf308195a80cd409490993
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "d7606523fca7de08d0b678066e97457d" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-2026-01-19-source-processor-54-mkw_p_page-plan.json" -> null
+      - key                    = "aiq-prod-2026-01-19-source-processor-54-mkw_p_page-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+  # module.wsj_abandon_cart.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_profile" -> null
+      - create_date = "2026-01-21T20:20:39Z" -> null
+      - id          = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_profile" -> null
+      - name        = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7PHJC64QLNU" -> null
+    }
+
+  # module.wsj_abandon_cart.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-01-21T20:20:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PMGC5BHWUD" -> null
+
+      - inline_policy {}
+    }
+
+  # module.wsj_abandon_cart.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role-20260121202039048100000006" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "source-processor-54-dj_abdn_cart-2026-01-19-prod_iam_role" -> null
+    }
+
+  # module.wsj_abandon_cart.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.347.4
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.347.3
+                luigi-worker: 0.347.3
+                luigi-worker-cadmium: 0.347.3
+                luigi-worker-gallium: 0.347.3
+                luigi-worker-iridium: 0.347.3
+                luigi-worker-lithium: 0.347.3
+                luigi-worker-osmium: 0.347.3
+                luigi-worker-thorium: 0.347.3
+                luigi-worker-tungsten: 0.347.3
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1096.0/activation-api_2.12-0.1096.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1052.0/activation-delivery-api_2.12-0.1052.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1175.0/amo-api_2.12-0.1175.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.961.0/cdp-query-api_2.12-0.961.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.992.0/data-pipeline_2.12-0.992.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.348.0/events_api_2.12-0.348.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1049.0/execution-api_2.12-0.1049.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1101.0/exporting_2.12-0.1101.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1188.0/fe-server_2.12-0.1188.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1139.0/field-tools_2.12-0.1139.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.625.0/icc-calc-lambda_2.12-0.625.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1005.0/ingest-api_2.12-0.1005.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.874.0/ingest-tool_2.12-0.874.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1058.0/offline-task-scheduler_2.12-0.1058.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.915.0/pm-tool_2.12-0.915.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.874.0/profile-processor_2.12-0.874.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.900.0/query-tool_2.12-0.900.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.958.0/sentinel-service_2.12-0.958.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1073.0/source-processor_2.12-0.1073.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.968.0/spark-api_2.12-0.968.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.999.0/spark-drivers-3-3_2.12-0.999.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.949.0/spark-tool_2.12-0.949.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.335.0/streaming-ingest-auth-lambda_2.12-1.335.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.375.0/streaming-ingest-lambda_2.12-1.375.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1088.0/trigger-execution_2.12-0.1088.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.952.0/trigger-execution-tools_2.12-0.952.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.73.0/worker-watcher_2.12-1.73.0-assembly.jar
+              inventory:
+                hosts:
+                  sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co:
+                    host_type: source-processor
+                    ec2_tag_Name: sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co
+                    ec2_tag_stack_name: 2026-01-19
+                groups:
+                  tag_aiq_module_source-processor:
+                  - sp.54.dj-abdn-cart.0.2026-01-19.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: 2026-01-19
+                stack_type: source-processor
+                branch: master
+                git_commit: 623ad826f51cecea66bf308195a80cd409490993
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "b169563dd7c603d56ffe531f767134d0" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-2026-01-19-source-processor-54-dj_abdn_cart-plan.json" -> null
+      - key                    = "aiq-prod-2026-01-19-source-processor-54-dj_abdn_cart-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+  # module.wsj_abandon_cart_qa.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_profile" -> null
+      - create_date = "2026-01-21T20:20:38Z" -> null
+      - id          = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_profile" -> null
+      - name        = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7PBGLYZ4POW" -> null
+    }
+
+  # module.wsj_abandon_cart_qa.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-01-21T20:20:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PAP3XV5VNI" -> null
+
+      - inline_policy {}
+    }
+
+  # module.wsj_abandon_cart_qa.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role-20260121202038849800000004" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "source-processor-54-dj_abdn_cart_qa-2026-01-19-prod_iam_role" -> null
+    }
+
+  # module.wsj_abandon_cart_qa.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.347.4
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.347.3
+                luigi-worker: 0.347.3
+                luigi-worker-cadmium: 0.347.3
+                luigi-worker-gallium: 0.347.3
+                luigi-worker-iridium: 0.347.3
+                luigi-worker-lithium: 0.347.3
+                luigi-worker-osmium: 0.347.3
+                luigi-worker-thorium: 0.347.3
+                luigi-worker-tungsten: 0.347.3
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1096.0/activation-api_2.12-0.1096.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1052.0/activation-delivery-api_2.12-0.1052.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1175.0/amo-api_2.12-0.1175.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.961.0/cdp-query-api_2.12-0.961.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.992.0/data-pipeline_2.12-0.992.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.348.0/events_api_2.12-0.348.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1049.0/execution-api_2.12-0.1049.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1101.0/exporting_2.12-0.1101.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1188.0/fe-server_2.12-0.1188.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1139.0/field-tools_2.12-0.1139.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.625.0/icc-calc-lambda_2.12-0.625.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1005.0/ingest-api_2.12-0.1005.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.874.0/ingest-tool_2.12-0.874.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1058.0/offline-task-scheduler_2.12-0.1058.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.915.0/pm-tool_2.12-0.915.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.874.0/profile-processor_2.12-0.874.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.900.0/query-tool_2.12-0.900.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.958.0/sentinel-service_2.12-0.958.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1073.0/source-processor_2.12-0.1073.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.968.0/spark-api_2.12-0.968.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.999.0/spark-drivers-3-3_2.12-0.999.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.949.0/spark-tool_2.12-0.949.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.335.0/streaming-ingest-auth-lambda_2.12-1.335.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.375.0/streaming-ingest-lambda_2.12-1.375.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1088.0/trigger-execution_2.12-0.1088.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.952.0/trigger-execution-tools_2.12-0.952.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.73.0/worker-watcher_2.12-1.73.0-assembly.jar
+              inventory:
+                hosts:
+                  sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co:
+                    host_type: source-processor
+                    ec2_tag_Name: sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co
+                    ec2_tag_stack_name: 2026-01-19
+                groups:
+                  tag_aiq_module_source-processor:
+                  - sp.54.dj-abdn-cart-qa.0.2026-01-19.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: 2026-01-19
+                stack_type: source-processor
+                branch: master
+                git_commit: 623ad826f51cecea66bf308195a80cd409490993
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "5fe2e6d600329a78f8c8ee8a629a220c" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-2026-01-19-source-processor-54-dj_abdn_cart_qa-plan.json" -> null
+      - key                    = "aiq-prod-2026-01-19-source-processor-54-dj_abdn_cart_qa-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+  # module.wsj_emerg_dis.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_profile" -> null
+      - create_date = "2026-01-21T20:20:38Z" -> null
+      - id          = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_profile" -> null
+      - name        = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7PHLG6AVTQQ" -> null
+    }
+
+  # module.wsj_emerg_dis.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-01-21T20:20:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PC4W5YVC6H" -> null
+
+      - inline_policy {}
+    }
+
+  # module.wsj_emerg_dis.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role-20260121202038840900000003" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "source-processor-54-wsj_emerg_dis-2026-01-19-prod_iam_role" -> null
+    }
+
+  # module.wsj_emerg_dis.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.347.4
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.347.3
+                luigi-worker: 0.347.3
+                luigi-worker-cadmium: 0.347.3
+                luigi-worker-gallium: 0.347.3
+                luigi-worker-iridium: 0.347.3
+                luigi-worker-lithium: 0.347.3
+                luigi-worker-osmium: 0.347.3
+                luigi-worker-thorium: 0.347.3
+                luigi-worker-tungsten: 0.347.3
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1096.0/activation-api_2.12-0.1096.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1052.0/activation-delivery-api_2.12-0.1052.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1175.0/amo-api_2.12-0.1175.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.961.0/cdp-query-api_2.12-0.961.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.992.0/data-pipeline_2.12-0.992.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.348.0/events_api_2.12-0.348.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1049.0/execution-api_2.12-0.1049.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1101.0/exporting_2.12-0.1101.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1188.0/fe-server_2.12-0.1188.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1139.0/field-tools_2.12-0.1139.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.625.0/icc-calc-lambda_2.12-0.625.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1005.0/ingest-api_2.12-0.1005.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.874.0/ingest-tool_2.12-0.874.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1058.0/offline-task-scheduler_2.12-0.1058.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.915.0/pm-tool_2.12-0.915.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.874.0/profile-processor_2.12-0.874.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.900.0/query-tool_2.12-0.900.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.958.0/sentinel-service_2.12-0.958.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1073.0/source-processor_2.12-0.1073.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.968.0/spark-api_2.12-0.968.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.999.0/spark-drivers-3-3_2.12-0.999.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.949.0/spark-tool_2.12-0.949.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.335.0/streaming-ingest-auth-lambda_2.12-1.335.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.375.0/streaming-ingest-lambda_2.12-1.375.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1088.0/trigger-execution_2.12-0.1088.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.952.0/trigger-execution-tools_2.12-0.952.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.73.0/worker-watcher_2.12-1.73.0-assembly.jar
+              inventory:
+                hosts:
+                  sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co:
+                    host_type: source-processor
+                    ec2_tag_Name: sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co
+                    ec2_tag_stack_name: 2026-01-19
+                groups:
+                  tag_aiq_module_source-processor:
+                  - sp.54.wsj-emerg-dis.0.2026-01-19.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: 2026-01-19
+                stack_type: source-processor
+                branch: master
+                git_commit: 623ad826f51cecea66bf308195a80cd409490993
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "8143c2bfd829ef9c15491f9203c1c4ac" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-2026-01-19-source-processor-54-wsj_emerg_dis-plan.json" -> null
+      - key                    = "aiq-prod-2026-01-19-source-processor-54-wsj_emerg_dis-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+  # module.wsj_page_prod.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/source-processor-54-wsj_p_page-2026-01-19-prod_iam_profile" -> null
+      - create_date = "2026-01-21T20:20:38Z" -> null
+      - id          = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_profile" -> null
+      - name        = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7PJU7AK4V7N" -> null
+    }
+
+  # module.wsj_page_prod.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/source-processor-54-wsj_p_page-2026-01-19-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-01-21T20:20:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PNRB2VOD3C" -> null
+
+      - inline_policy {}
+    }
+
+  # module.wsj_page_prod.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_role-20260121202038827600000001" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "source-processor-54-wsj_p_page-2026-01-19-prod_iam_role" -> null
+    }
+
+  # module.wsj_page_prod.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.347.4
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.347.3
+                luigi-worker: 0.347.3
+                luigi-worker-cadmium: 0.347.3
+                luigi-worker-gallium: 0.347.3
+                luigi-worker-iridium: 0.347.3
+                luigi-worker-lithium: 0.347.3
+                luigi-worker-osmium: 0.347.3
+                luigi-worker-thorium: 0.347.3
+                luigi-worker-tungsten: 0.347.3
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1096.0/activation-api_2.12-0.1096.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1052.0/activation-delivery-api_2.12-0.1052.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1175.0/amo-api_2.12-0.1175.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.961.0/cdp-query-api_2.12-0.961.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.992.0/data-pipeline_2.12-0.992.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.348.0/events_api_2.12-0.348.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1049.0/execution-api_2.12-0.1049.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1101.0/exporting_2.12-0.1101.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1188.0/fe-server_2.12-0.1188.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1139.0/field-tools_2.12-0.1139.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.625.0/icc-calc-lambda_2.12-0.625.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1005.0/ingest-api_2.12-0.1005.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.874.0/ingest-tool_2.12-0.874.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1058.0/offline-task-scheduler_2.12-0.1058.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.915.0/pm-tool_2.12-0.915.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.874.0/profile-processor_2.12-0.874.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.900.0/query-tool_2.12-0.900.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.958.0/sentinel-service_2.12-0.958.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1073.0/source-processor_2.12-0.1073.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.968.0/spark-api_2.12-0.968.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.999.0/spark-drivers-3-3_2.12-0.999.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.949.0/spark-tool_2.12-0.949.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.335.0/streaming-ingest-auth-lambda_2.12-1.335.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.375.0/streaming-ingest-lambda_2.12-1.375.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1088.0/trigger-execution_2.12-0.1088.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.952.0/trigger-execution-tools_2.12-0.952.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.73.0/worker-watcher_2.12-1.73.0-assembly.jar
+              inventory:
+                hosts:
+                  sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co:
+                    host_type: source-processor
+                    ec2_tag_Name: sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co
+                    ec2_tag_stack_name: 2026-01-19
+                groups:
+                  tag_aiq_module_source-processor:
+                  - sp.54.wsj-p-page.0.2026-01-19.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: 2026-01-19
+                stack_type: source-processor
+                branch: master
+                git_commit: 623ad826f51cecea66bf308195a80cd409490993
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "562ce4c3ab987be21415f1ee26d75920" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-2026-01-19-source-processor-54-wsj_p_page-plan.json" -> null
+      - key                    = "aiq-prod-2026-01-19-source-processor-54-wsj_p_page-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+Plan: 0 to add, 0 to change, 36 to destroy.
+
