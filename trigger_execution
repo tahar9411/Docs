@@ -1,0 +1,293 @@
+/Users/taharizvi/aiq/aiq tf terraform/prod/trigger_execution/instances/54 destroy --stackname release-2026-02-09  --account-name prod
+y/n [y]: y
+module.main.module.app_iam.aws_iam_role.app_node_iam_role: Refreshing state... [id=trigger-execution-54-release-2026-02-09-prod_iam_role]
+module.main.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0]: Refreshing state... [id=aiq-prod-release-2026-02-09-trigger-execution-54-plan.json]
+module.main.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment: Refreshing state... [id=trigger-execution-54-release-2026-02-09-prod_iam_role-20260212180136755500000001]
+module.main.module.app_iam.aws_iam_instance_profile.app_node_instance_profile: Refreshing state... [id=trigger-execution-54-release-2026-02-09-prod_iam_profile]
+module.main.aws_instance.trigger_activator: Refreshing state... [id=i-0467945a99d2ac999]
+module.main.aws_route53_record.trigger_activator_cname: Refreshing state... [id=ZDZPE368BU2N5_trigger-execution.54.release-2026-02-09.prod.actioniq.co._CNAME]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # module.main.aws_instance.trigger_activator will be destroyed
+  - resource "aws_instance" "trigger_activator" {
+      - ami                                  = "ami-0e57c23a942c0d5c0" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:189443971038:instance/i-0467945a99d2ac999" -> null
+      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1b" -> null
+      - cpu_core_count                       = 2 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - iam_instance_profile                 = "trigger-execution-54-release-2026-02-09-prod_iam_profile" -> null
+      - id                                   = "i-0467945a99d2ac999" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "m5.xlarge" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-04a03b2000a3b6acd" -> null
+      - private_dns                          = "ip-10-30-54-45.ec2.internal" -> null
+      - private_ip                           = "10.30.54.45" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-069755d53e071da40" -> null
+      - tags                                 = {
+          - "Name"                  = "trigger-execution.54.release-2026-02-09.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.211.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "trigger-execution-54"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "release-2026-02-09"
+          - "stack_type"            = "trigger-execution"
+        } -> null
+      - tags_all                             = {
+          - "Name"                  = "trigger-execution.54.release-2026-02-09.prod.actioniq.co"
+          - "ansible_env"           = "ta_cluster_prod"
+          - "app_version"           = "0.211.0"
+          - "cost_center"           = "prod"
+          - "cost_shared"           = "false"
+          - "customer_id"           = "54"
+          - "env"                   = "prod"
+          - "host_role"             = "trigger-execution-54"
+          - "orchestration_manager" = "terraform"
+          - "stack_name"            = "release-2026-02-09"
+          - "stack_type"            = "trigger-execution"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-019cda7566904cf25",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {
+              - "ansible_env" = "ta_cluster_prod"
+              - "cost_center" = "prod"
+              - "cost_shared" = "false"
+              - "env"         = "prod"
+              - "host_role"   = "trigger-execution-54"
+              - "stack_name"  = "release-2026-02-09"
+              - "stack_type"  = "trigger-execution"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-059c378a9a829879c" -> null
+          - volume_size           = 64 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # module.main.aws_route53_record.trigger_activator_cname will be destroyed
+  - resource "aws_route53_record" "trigger_activator_cname" {
+      - fqdn    = "trigger-execution.54.release-2026-02-09.prod.actioniq.co" -> null
+      - id      = "ZDZPE368BU2N5_trigger-execution.54.release-2026-02-09.prod.actioniq.co._CNAME" -> null
+      - name    = "trigger-execution.54.release-2026-02-09.prod.actioniq.co" -> null
+      - records = [
+          - "ip-10-30-54-45.ec2.internal",
+        ] -> null
+      - ttl     = 60 -> null
+      - type    = "CNAME" -> null
+      - zone_id = "ZDZPE368BU2N5" -> null
+    }
+
+  # module.main.module.app_iam.aws_iam_instance_profile.app_node_instance_profile will be destroyed
+  - resource "aws_iam_instance_profile" "app_node_instance_profile" {
+      - arn         = "arn:aws:iam::189443971038:instance-profile/trigger-execution-54-release-2026-02-09-prod_iam_profile" -> null
+      - create_date = "2026-02-12T18:01:36Z" -> null
+      - id          = "trigger-execution-54-release-2026-02-09-prod_iam_profile" -> null
+      - name        = "trigger-execution-54-release-2026-02-09-prod_iam_profile" -> null
+      - path        = "/" -> null
+      - role        = "trigger-execution-54-release-2026-02-09-prod_iam_role" -> null
+      - tags        = {} -> null
+      - tags_all    = {} -> null
+      - unique_id   = "AIPASYG55S7POPFVUG3IE" -> null
+    }
+
+  # module.main.module.app_iam.aws_iam_role.app_node_iam_role will be destroyed
+  - resource "aws_iam_role" "app_node_iam_role" {
+      - arn                   = "arn:aws:iam::189443971038:role/trigger-execution-54-release-2026-02-09-prod_iam_role" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ecs-tasks.amazonaws.com"
+                        }
+                      - Sid       = ""
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-02-12T18:01:36Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "trigger-execution-54-release-2026-02-09-prod_iam_role" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::189443971038:policy/prod_application_iam_policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "trigger-execution-54-release-2026-02-09-prod_iam_role" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROASYG55S7PNPYUWPFYT" -> null
+
+      - inline_policy {}
+    }
+
+  # module.main.module.app_iam.aws_iam_role_policy_attachment.app_node_role_policy_attachment will be destroyed
+  - resource "aws_iam_role_policy_attachment" "app_node_role_policy_attachment" {
+      - id         = "trigger-execution-54-release-2026-02-09-prod_iam_role-20260212180136755500000001" -> null
+      - policy_arn = "arn:aws:iam::189443971038:policy/prod_application_iam_policy" -> null
+      - role       = "trigger-execution-54-release-2026-02-09-prod_iam_role" -> null
+    }
+
+  # module.main.module.cluster_plan.aws_s3_bucket_object.app_cluster_plan[0] will be destroyed
+  - resource "aws_s3_bucket_object" "app_cluster_plan" {
+      - acl                    = "private" -> null
+      - bucket                 = "aiq-stack-runtime-configs" -> null
+      - bucket_key_enabled     = false -> null
+      - content                = <<-EOT
+            cluster_plan:
+              customers:
+              - wsj
+              use_artifact_versions: true
+              artifact_strategy: release
+              artifact_versions:
+                activation-api: 0.199.65
+                activation-delivery-api: 0.200.0
+                amo-api: 0.199.65
+                cdp-query-api: 0.199.65
+                data-pipeline: 0.200.0
+                exporting: 0.199.70
+                fe-server: 0.199.83
+                field-tools: 0.200.0
+                ingest-annotations: 0.350.8
+                ingest-api: 0.200.0
+                ingest-tool: 0.200.0
+                job-launcher: 1.0.0
+                job-scheduler: 0.350.4
+                luigi-worker: 0.350.4
+                luigi-worker-cadmium: 0.350.4
+                luigi-worker-gallium: 0.350.4
+                luigi-worker-iridium: 0.350.4
+                luigi-worker-lithium: 0.350.4
+                luigi-worker-osmium: 0.350.4
+                luigi-worker-thorium: 0.350.4
+                luigi-worker-tungsten: 0.350.4
+                mega-jar: 0.272.9
+                offline-task-scheduler: 0.201.0
+                person-match-validator: 0.199.64
+                pipeline: 0.200.0
+                pm-tool: 0.200.0
+                query-tool: 0.200.0
+                schema-migration: 0.199.57
+                sentinel-service: 0.200.0
+                source-processor: 0.201.0
+                source-processor-tools: 0.199.65
+                spark-tool: 0.199.65
+                trigger-execution: 0.211.0
+                trigger-execution-tools: 0.200.0
+              artifact_urls:
+                activation-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-api_2.12/0.1109.0/activation-api_2.12-0.1109.0-assembly.jar
+                activation-delivery-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/activation-delivery-api_2.12/0.1064.0/activation-delivery-api_2.12-0.1064.0-assembly.jar
+                amo-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/amo-api_2.12/0.1190.0/amo-api_2.12-0.1190.0-assembly.jar
+                cdp-query-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/cdp-query-api_2.12/0.972.0/cdp-query-api_2.12-0.972.0-assembly.jar
+                data-pipeline: s3://aiq-artifacts/app-bin/releases/co/actioniq/data-pipeline_2.12/0.1004.0/data-pipeline_2.12-0.1004.0-assembly.jar
+                events_api: s3://aiq-artifacts/app-bin/releases/co/actioniq/events_api_2.12/0.360.0/events_api_2.12-0.360.0-assembly.jar
+                execution-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/execution-api_2.12/0.1061.0/execution-api_2.12-0.1061.0-assembly.jar
+                exporting: s3://aiq-artifacts/app-bin/releases/co/actioniq/exporting_2.12/0.1114.0/exporting_2.12-0.1114.0-assembly.jar
+                fe-server: s3://aiq-artifacts/app-bin/releases/co/actioniq/fe-server_2.12/0.1204.0/fe-server_2.12-0.1204.0-assembly.jar
+                field-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/field-tools_2.12/0.1156.0/field-tools_2.12-0.1156.0-assembly.jar
+                icc-calc-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/icc-calc-lambda_2.12/0.635.0/icc-calc-lambda_2.12-0.635.0-assembly.jar
+                ingest-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-api_2.12/0.1017.0/ingest-api_2.12-0.1017.0-assembly.jar
+                ingest-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/ingest-tool_2.12/0.884.0/ingest-tool_2.12-0.884.0-assembly.jar
+                offline-task-scheduler: s3://aiq-artifacts/app-bin/releases/co/actioniq/offline-task-scheduler_2.12/0.1069.0/offline-task-scheduler_2.12-0.1069.0-assembly.jar
+                pm-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/pm-tool_2.12/0.926.0/pm-tool_2.12-0.926.0-assembly.jar
+                profile-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/profile-processor_2.12/0.885.0/profile-processor_2.12-0.885.0-assembly.jar
+                profileapi-query-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/profileapi-query-lambda_2.12/0.2.0/profileapi-query-lambda_2.12-0.2.0-assembly.jar
+                query-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/query-tool_2.12/0.911.0/query-tool_2.12-0.911.0-assembly.jar
+                sentinel-service: s3://aiq-artifacts/app-bin/releases/co/actioniq/sentinel-service_2.12/0.968.0/sentinel-service_2.12-0.968.0-assembly.jar
+                source-processor: s3://aiq-artifacts/app-bin/releases/co/actioniq/source-processor_2.12/0.1084.0/source-processor_2.12-0.1084.0-assembly.jar
+                spark-api: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-api_2.12/0.979.0/spark-api_2.12-0.979.0-assembly.jar
+                spark-drivers-3-3: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-drivers-3-3_2.12/0.1010.0/spark-drivers-3-3_2.12-0.1010.0-assembly.jar
+                spark-tool: s3://aiq-artifacts/app-bin/releases/co/actioniq/spark-tool_2.12/0.960.0/spark-tool_2.12-0.960.0-assembly.jar
+                streaming-ingest-auth-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-auth-lambda_2.12/1.341.0/streaming-ingest-auth-lambda_2.12-1.341.0-assembly.jar
+                streaming-ingest-lambda: s3://aiq-artifacts/app-bin/releases/co/actioniq/streaming-ingest-lambda_2.12/1.381.0/streaming-ingest-lambda_2.12-1.381.0-assembly.jar
+                trigger-execution: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution_2.12/0.1099.0/trigger-execution_2.12-0.1099.0-assembly.jar
+                trigger-execution-tools: s3://aiq-artifacts/app-bin/releases/co/actioniq/trigger-execution-tools_2.12/0.963.0/trigger-execution-tools_2.12-0.963.0-assembly.jar
+                worker-watcher: s3://aiq-artifacts/app-bin/releases/co/actioniq/worker-watcher_2.12/1.83.0/worker-watcher_2.12-1.83.0-assembly.jar
+              inventory:
+                hosts:
+                  trigger-execution.54.release-2026-02-09.prod.actioniq.co:
+                    host_type: trigger-execution
+                    ec2_tag_Name: trigger-execution.54.release-2026-02-09.prod.actioniq.co
+                    ec2_tag_stack_name: release-2026-02-09
+                groups:
+                  tag_aiq_module_trigger-execution:
+                  - trigger-execution.54.release-2026-02-09.prod.actioniq.co
+              params:
+                ansible_env: aiq_cluster_prod
+                deploy_env: prod_aws
+                cost_center: prod
+                env: prod
+                stack_name: release-2026-02-09
+                stack_type: trigger-execution
+                branch: release-2026-02-09
+                git_commit: 51605239339565bdf52fb54cf06054ee75b8b308
+                io_cluster_vpc: prod
+                is_sandbox: false
+        EOT -> null
+      - content_type           = "binary/octet-stream" -> null
+      - etag                   = "ba1592b48e175eddd77921da058c5247" -> null
+      - force_destroy          = false -> null
+      - id                     = "aiq-prod-release-2026-02-09-trigger-execution-54-plan.json" -> null
+      - key                    = "aiq-prod-release-2026-02-09-trigger-execution-54-plan.json" -> null
+      - metadata               = {} -> null
+      - server_side_encryption = "AES256" -> null
+      - storage_class          = "STANDARD" -> null
+      - tags                   = {} -> null
+      - tags_all               = {} -> null
+    }
+
+Plan: 0 to add, 0 to change, 6 to destroy.
+
